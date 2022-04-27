@@ -65,7 +65,9 @@
     color: var(--black-color);
     font-weight: 600;
 }
-
+.header__navbar-item-link >a:hover{
+    opacity: 0.7;
+}
 .color-border-header{
     color: #ffdfdd;
     background-color: #ff2600;
@@ -73,6 +75,9 @@
 .header__navbar-icon{
     margin: 0 12px;
     cursor: pointer;
+}
+.header__navbar-icon:hover{
+    opacity: 0.7;
 }
 .object__menu2,
 .object__menu{
@@ -141,6 +146,33 @@
 }
 
 
+.search-container {
+    display: none;
+}
+.search{
+    display: flex;
+    width: 500px;
+}
+input[type=text] {
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+}
+input[type=text]:hover{
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
 /* mobile menu*/
 .mobile-menu-btn{
     position: absolute;
@@ -204,7 +236,6 @@
     font-size: 3.3vw;
     font-weight: 800;
     color: var(--black-color);
-
     line-height: 1.4;
 }
 .slider__paragraph-title{
@@ -299,8 +330,10 @@
     padding: 62px 0;
 }
 .more__content-img{
-    float: right;
-    width:100%;
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    padding: 20px 0;
 }
 .content-heading{
     line-height: 1.4;
@@ -326,9 +359,9 @@
     padding: 24px 0;
 }
 .process__content-img{
-    width: 397px ;
-    height: 402px;
-    border-radius: 5px;
+    max-width: 100%;
+    width: 450px;
+    height: auto;
 }
 .content__title a,
 .content__title{
@@ -337,6 +370,9 @@
     color: var(--text-color);
     text-align: center;
     margin: 18px ;
+}
+.content__title{
+    margin: 19px 115px;
 }
 
 /* content 4 */
@@ -361,17 +397,18 @@
     background-color: var(--white-color);
     width: 306px;
     border-radius: 12px;
-   
+    left: 0;
+    right: 0;
 }
 .content__4-img{
-    width: 307px;
-    height: 192px;  
+    max-width: 100%;
+    width: 100%;
 }
 .content__4-img:hover{
     opacity: 0.7;
 }
 .content__4-img-box{
-    width: 100%;
+    width: 100.4%;
     object-fit: cover;
 }
 .content__4-description{
@@ -407,6 +444,15 @@
     justify-content: center;
 }
 
+
+.grid-md-4 {
+    flex: 0 0 auto;
+    width: 31.333333%;
+    margin-right: 20px;
+}
+.grid-md-4:last-child{
+    margin: 0;
+}
 /* content 5 */
 .accordion{
     margin: 56px 0;

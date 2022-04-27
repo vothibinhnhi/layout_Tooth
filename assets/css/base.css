@@ -45,7 +45,11 @@ html{
 }
 
 .grid__column-6{
+    padding-right: 20px;
     width: 50%;
+}
+.grid__column-6:nth-child(2){
+    padding: 0;
 }
 /* Button style */
 .btn{
@@ -70,10 +74,6 @@ html{
     padding: 87px 0;
 }
 
-/* PC */
-@media(min-width:1024px){
-    
-}
 /* Tablet & mobile*/
 @media(max-width:1023px){
     .grid {
@@ -81,17 +81,13 @@ html{
         margin-right: 50px;
         max-width: 100%;
     }
-    .process__content{
-        display: block !important;
-    }
-   
-    .content__4-item{
-        margin-left: 15px;
-    }
+    
     .btn:first-child{
         display: none;
     }
-   
+    .search-container {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -109,8 +105,14 @@ html{
         margin-right:20px;
         max-width: 100%;
     }
+    .grid__column-6{
+       width: 100% !important;
+    }
     .nav-none{
         display: none !important;
+    }
+    .search-container {
+        display: none;
     }
     .content__lorem-title{
         padding: 5px 100px;
@@ -122,6 +124,9 @@ html{
         display: flex !important;
         justify-content: space-between;
         align-items: center; 
+    }
+    .more__content-img {
+        width: 80% !important;
     }
     .header__close-icon{
         margin-right: 33px !important;
@@ -152,6 +157,20 @@ html{
     .mobile-menu-btn{
         display: block !important;
     }
+    .grid-md-4{
+        width: 50% !important;
+        margin: 0 !important;
+    }
+
+    .grid-md-4:last-child {
+        margin-top: 20px !important;
+    }
+    .content__icon{
+        top: 65px !important;
+        height: 30px !important;
+        width: 30px !important;
+        padding: 6px !important;
+    }
     
 }
 @media(max-width:470px){
@@ -160,3 +179,23 @@ html{
     }
     
 }
+@media (min-width: 576px){
+    .grid-sm-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .grid-sm-5 {
+        flex: 0 0 auto;
+        width: 41.6666666667%;
+    }
+}
+@media (min-width: 768px){
+    .grid-md-4 {
+        flex: 0 0 auto;
+        width: 33.3333333333%;
+    }
+    .grid-md-4:last-child{
+        margin: 0;
+    }
+}
+
