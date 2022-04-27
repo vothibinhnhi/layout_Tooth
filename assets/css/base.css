@@ -88,6 +88,7 @@ html{
     .search-container {
         display: none;
     }
+   
 }
 
 /* Mobile */
@@ -172,6 +173,15 @@ html{
         padding: 6px !important;
     }
     
+    .header__navbar-list{
+        display: block !important;
+    }
+    .nav_acvite{
+        margin: 0;
+    }
+    .header__navbar-item-link{
+        padding: 0 18px;
+    }
 }
 @media(max-width:470px){
     .header__close-icon{
