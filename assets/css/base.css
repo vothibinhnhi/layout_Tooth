@@ -53,10 +53,10 @@ html{
 }
 /* Button style */
 .btn{
-    min-width: 135px;
+    min-width: 132px;
     text-decoration: none;
     border: none;
-    border-radius: 25px;
+    border-radius: 35px;
     font-size: 15px;
     padding: 0 12px;
     outline: none;
@@ -115,6 +115,21 @@ html{
     .search-container {
         display: none;
     }
+    .slider .btn {
+        /* display: none; */
+        font-size: 7px !important;
+    }
+    
+    .style-height-slider{
+        height:30px !important;
+        max-width: 50px !important;
+    }
+    .slider__paragraph-title{
+        margin: 8px 0 !important;
+    }
+    .border-icon{
+        margin-left: 18px !important;
+    }
     .content__lorem-title{
         padding: 5px 100px;
     }
@@ -152,6 +167,9 @@ html{
     .border-icon-content {
         right: 20px !important;
     }
+    .border-icon{
+        padding: 5px !important;
+    }
     .header__navbar-icon{
         display: none !important;
     }
@@ -163,15 +181,10 @@ html{
         margin: 0 !important;
     }
 
-    .grid-md-4:last-child {
-        margin-top: 20px !important;
+    .grid-md-4:nth-child(2) {
+        margin: 20px 0 !important;
     }
-    .content__icon{
-        top: 65px !important;
-        height: 30px !important;
-        width: 30px !important;
-        padding: 6px !important;
-    }
+    
     
     .header__navbar-list{
         display: block !important;

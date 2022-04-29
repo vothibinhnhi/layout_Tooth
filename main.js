@@ -21,11 +21,9 @@
         e.preventDefault()
         $('.search-container').hide()
         $('#nav').show()
-    })
-        
+    });
     
-        // drop
-        
+
         // Enroll Now
     function Enroll(){
         alert("Enroll Now");
@@ -34,4 +32,10 @@
     document.querySelector('#megax').addEventListener("click", function() {
         document.querySelector('.header__close').style.display = "none";
     });
+        // close/open content-footer
+    $('.accordion__item-icon-minus').click((e)=>{
+        e.stopPropagation();
+        $(".accordion__list-plus").toggle('nav_acvite');
+    });
+    
 
