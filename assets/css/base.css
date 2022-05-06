@@ -190,11 +190,25 @@ html{
     .header__navbar-list{
         display: block !important;
     }
-    .nav_acvite{
-        margin: 0;
+    
+    .header__navbar-item.header__navbar-item-type2 {
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .header__navbar-item.header__navbar-item-type2.nav_acvite {
+        height: auto;
     }
     .header__navbar-item-link{
         padding: 0 18px;
+        padding-left: 20%;
+        transition: 1s all;
+    }
+    .nav_acvite .header__navbar-item-link {
+        padding-left: 0;
     }
     .content__lorem-heading,
     .accordion__item-title-minus{

@@ -54,7 +54,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .header__navbar-item-link{
     position: relative;
@@ -292,9 +291,9 @@ input[type=text]:hover{
     display: flex;
     justify-content: space-between;
 }
-.content__list-item-img{
-    font-size: 1.5vw;
-    margin-right: 10px;
+.content__list-item-img {
+    height: 10vw;
+    margin: auto;
 }
 /* content__lorem */
 .content__lorem{

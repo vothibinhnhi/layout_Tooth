@@ -3,9 +3,7 @@
     $('.menu-icon').click(function(e) {
         e.stopPropagation();
         $("#nav").toggleClass('nav_acvite');
-            //animate
-        var div = $(".header__navbar-item-link");  
-        div.animate({right: '40px',}, "slow");
+        
     });
 
     $('body').click(function(e) {
@@ -58,11 +56,24 @@
     }
         
      // Slider img
-    $('.content__list-slider').slick({
-        slidesToShow: 3,
+    $('.content__list-slider ').slick({
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        dots: false,
+        prevArrow: false,
+        nextArrow: false,
+        responsive: [
+            {
+              breakpoint: 767,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true
+              }
+            }
+          ]
     });
-          
+        
    
