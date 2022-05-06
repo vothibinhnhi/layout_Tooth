@@ -3,7 +3,9 @@
     $('.menu-icon').click(function(e) {
         e.stopPropagation();
         $("#nav").toggleClass('nav_acvite');
-    
+            //animate
+        var div = $(".header__navbar-item-link");  
+        div.animate({right: '40px',}, "slow");
     });
 
     $('body').click(function(e) {
@@ -11,6 +13,8 @@
             $("#nav").toggleClass('nav_acvite')
         }
     });
+
+
         // search
     $('.header__navbar-icon').click(()=>{
         $('.search-container').show()
@@ -22,8 +26,7 @@
         $('.search-container').hide()
         $('#nav').show()
     });
-    
-
+       
         // Enroll Now
     function Enroll(){
         alert("Enroll Now");
@@ -32,10 +35,34 @@
     document.querySelector('#megax').addEventListener("click", function() {
         document.querySelector('.header__close').style.display = "none";
     });
+
         // close/open content-footer
     $('.accordion__item-icon-minus').click((e)=>{
         e.stopPropagation();
-        $(".accordion__list-plus").toggle('nav_acvite');
+        $(".accordion__paragraph").toggle('nav_acvite');
     });
-    
 
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    });
+    }
+        
+     // Slider img
+    $('.content__list-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+          
+   
