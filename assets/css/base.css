@@ -52,6 +52,10 @@ html{
 .grid__column-6:nth-child(2){
     padding: 0;
 }
+.style__border{
+    border: none !important;
+}
+
 /* Button style */
 .btn{
     min-width: 132px;
@@ -131,6 +135,18 @@ html{
     .border-icon{
         margin-left: 18px !important;
     }
+    h3,
+    #accordion p{
+        font-size: 12px !important;
+    }
+    h4,
+    h3:after,
+    h3 .active:after,
+    h4:after,
+    h4 .active:after {
+        font-size: 14px !important;
+    }
+   
     .content__lorem-title{
         padding: 5px 100px !important;
         font-size: 12px !important;
@@ -197,7 +213,7 @@ html{
         align-items: flex-start;
         height: 0;
         overflow: hidden;
-        transition: all 0.5s;
+        /* transition: all 0.5s; */
     }
     .header__navbar-item.header__navbar-item-type2.nav_acvite {
         height: auto;
@@ -210,14 +226,12 @@ html{
     .nav_acvite .header__navbar-item-link {
         padding-left: 0;
     }
-    .content__lorem-heading,
-    .accordion__item-title-minus{
+    .content__lorem-heading{
         font-size: 14px !important;
     }
     .content-title,
     .content__title,
-    .content__title a,
-    .accordion__paragraph{
+    .content__title a{
         font-size: 12px !important;
     }
     .content-heading,
@@ -228,6 +242,10 @@ html{
         display: flex;
         justify-content: left!important;
        
+    }
+    .footer__link-title1 a,
+    .footer__link-title2 a{
+        font-size: 12px !important;
     }
 }
 @media(max-width:470px){
@@ -255,4 +273,5 @@ html{
         margin: 0;
     }
 }
+
 
