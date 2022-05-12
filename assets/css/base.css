@@ -93,6 +93,12 @@ html{
     .search-container {
         display: none;
     }
+    .accordion-button{
+        font-size: 14px !important;
+    }
+    .accordion-body{
+        font-size: 12px !important;
+    }
    
 }
 
@@ -215,7 +221,9 @@ html{
         overflow: hidden;
         /* transition: all 0.5s; */
     }
+
     .header__navbar-item.header__navbar-item-type2.nav_acvite {
+        margin-left: -20px;
         height: auto;
     }
     .header__navbar-item-link{
@@ -226,12 +234,14 @@ html{
     .nav_acvite .header__navbar-item-link {
         padding-left: 0;
     }
-    .content__lorem-heading{
-        font-size: 14px !important;
+    .content__lorem-heading,
+    .accordion-button{
+        font-size: 13px !important;
     }
     .content-title,
     .content__title,
-    .content__title a{
+    .content__title a,
+    .accordion-body{
         font-size: 12px !important;
     }
     .content-heading,
@@ -246,6 +256,9 @@ html{
     .footer__link-title1 a,
     .footer__link-title2 a{
         font-size: 12px !important;
+    }
+    .style--width-ouv{
+        width: 100% !important;
     }
 }
 @media(max-width:470px){

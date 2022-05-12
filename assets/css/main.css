@@ -471,16 +471,15 @@ input[type=text]:hover{
     margin: 0;
 }
 /* content 5 */
-#accordion{
-    margin: 56px 0;
-}
-
 .content__line{
     height: 4px;
     width:100%;
     background-color: var(--border-button-color);
 }
-
+/* #accordion{
+    margin: 56px 0;
+} 
+ 
 h4{
     font-size: 16px;
     font-weight: 700;
@@ -530,7 +529,7 @@ h3:after {
 }
   
 h3 .active:after {
-content: "\2212";
+    content: "\2212";
 }
 .active, h3:nth-child(13){
     border: none ;
@@ -539,7 +538,82 @@ content: "\2212";
     background-color: #dfe9e1;
     border-radius: 35px;
     border: none;
+} */
+
+.accordion{
+    margin: 70px 0;
 }
+button.style--button{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.accordion-button::after{
+    background-image: none;
+    border: none;
+    content: '\002B';
+    font-size: 24px;
+}
+.accordion-button:not(.collapsed)::after{
+   display: block;
+    background-image: none;
+    content: "\2212";
+    font-size: 24px;
+}
+.accordion-item{
+    border: none;
+    background-color: none;
+    margin-top: 3px;
+    transition: ease-out 0.1s;
+}
+.accordion-button {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 18px 32px;
+    width: 100%; 
+    border: none;
+    
+}
+.style--width-ouv{
+    width: 85%;
+}
+h2 .accordion-button{
+    border-bottom: 1px solid var(--border-button-color); 
+}
+h2 .accordion-button:hover{
+    border: none ;
+}
+button.collapsed{
+    background-color:var(--white-color);
+}
+.accordion-button{
+    background-color:  #dfe9e1;
+}
+.accordion-button:hover {
+    outline: 0;
+    background-color: #dfe9e1;
+    border-radius: 35px;
+}    
+.accordion-button .active:after {
+    content: '\002B';
+}
+
+.accordion-body{
+    font-size: 13px;
+    padding: 0 32px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
 
 
 /* Content Footer */
@@ -685,5 +759,6 @@ input{
 }
 *:focus {
     outline: 0;
+    border: none;
 }
 

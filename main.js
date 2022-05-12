@@ -43,9 +43,11 @@
     $( function() {
         $( "#accordion" ).accordion();
     } );
-
     
-
+    // $('.accordion-item').click(function() {
+    //     $(".accordion-collapse").slideToggle();
+    // });
+   
         // Slider img
     $('.content__list-slider ').slick({
         slidesToShow: 5,
